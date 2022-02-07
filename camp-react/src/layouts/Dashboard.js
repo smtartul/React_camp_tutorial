@@ -6,6 +6,7 @@ import { Route,Routes } from "react-router-dom";
 import ProductDetail from "../pages/ProductDetail";
 import CartDetail from "../pages/CartDetail";
 import { ToastContainer } from "react-toastify";
+import ProductAdd from "../pages/ProductAdd";
 
 export default function Dashboard() {
   return (
@@ -22,6 +23,7 @@ export default function Dashboard() {
               <Route exact path="/" element={<ProductList/>} />
               <Route exact path="/products" element={<ProductList/>} />
               <Route exact path="/products/:id" element={<ProductDetail/>} />
+              <Route exact path="/product/add" element={<ProductAdd/>} />
               <Route exact path="/cart" element={<CartDetail/>} />
             </Routes>
 
